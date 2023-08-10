@@ -1,10 +1,10 @@
 let tasks = [
   {
-    titulo: "Comprar comida para o gato",
+    titulo: "Fazer compra",
     tipo: "Urgente"
   },
   {
-    titulo: "Limpar o quarto",
+    titulo: "Limpar a casa",
     tipo: "Urgente"
   },
   {
@@ -12,7 +12,7 @@ let tasks = [
     tipo: "prioritário"
   },
   {
-    titulo: "Guardar dinheiro do lanche",
+    titulo: "Separar dinheiro para o lanche",
     tipo: "Urgente"
   },
   {
