@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,17 +8,44 @@
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
 </head>
+
 <body>
-    <!-- <header>
-        <title>Inserir tarefa</title>
-        <form class="titulo-tarefa" aria-placeholder="Digitar título da tarefa" action=""></form>
-        <form ra action=""></form>
-        
-    </header> -->
+    <nav>
+        <div class="div_Nav">
+            <div>
+                <h1 class="logo">MY TASK'S</h1>
+            </div>
+            <div>
+                <input type="search" class="pesquisar" placeholder="  Pesquisar tarefa">
+            </div>
+        </div>
+    </nav>
+
+    <header>
+        <form>
+            <h1>Inserir tarefa</h1>
+
+            <div class="formulario_itens">
+                <input type="text" class="blocos_form" id="input_Value" name="titulo"
+                    placeholder="  Digitar título da tarefa" />
+
+                <select class="blocos_form" id="option_Value" name="tipo">
+                    <option value="">Selecionar tipo</option>
+                    <option value="URGENTE">Urgente</option>
+                    <option value="PRIORITÁRIO">Prioritário</option>
+                    <option value="NORMAL">Normal</option>
+                </select>
+            </div>
+
+            <button class="button_adiciona" id="buttonForm" type="submit">Adicionar Tarefa na Lista</button>
+        </form>
+    </header>
+
     <main class="form-tarefas">
         <h1>Tarefas</h1>
         <ol>
         </ol>
     </main>
 </body>
+
 </html>

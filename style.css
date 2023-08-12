@@ -4,7 +4,7 @@
 }
 
 body {
-    background-color: rgba(231, 231, 231, 0.415);
+    background-color: rgba(231, 231, 231, 0.705);
     height: 100vh;
     display: flex;
     justify-content: start;
@@ -12,7 +12,39 @@ body {
     flex-direction: column;
 }
 
-main {
+nav {
+    background-color: white;
+    width: 100%;
+    height: auto;
+    box-shadow: 0px 0px 23px -12px rgba(0, 0, 0, 0.73);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.div_Nav {
+    border-radius: 5px;
+    margin: 2rem;
+    width: 70%;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+nav h1 {
+    color: rgb(72, 0, 255);
+}
+
+nav input {
+    width: 160px;
+    height: 2.2rem;
+    border: none;
+    border-radius: 3px;
+    background-color: #f1f1f19a;
+}
+
+header {
     border-radius: 5px;
     margin: 2rem;
     background-color: white;
@@ -20,8 +52,50 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding: 20px;
+    box-shadow: 0px 0px 23px -12px rgba(0, 0, 0, 0.73);
+}
+
+form {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    width: 100%;
+}
+
+.formulario_itens {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.blocos_form {
+    width: 46%;
+    height: 2.2rem;
+    border: none;
+    border-radius: 3px;
+    background-color: #f1f1f19a;
+}
+
+form button {
+    width: 100%;
+    height: 2.2rem;
+    border: none;
+    background-color: rgba(91, 52, 222, 0.956);
+    color: white;
+    border-radius: 3px;
+}
+
+main {
+    border-radius: 5px;
+    margin-bottom: 2rem;
+    background-color: white;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
     padding: 20px;
+    box-shadow: 0px 0px 23px -12px rgba(0, 0, 0, 0.73)
 }
 
 main h1 {
@@ -37,6 +111,7 @@ main ol {
 
 .objetoLista {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 400;
     background-color: #f1f1f1;
     padding: 0.8rem;
     margin-bottom: 0.7rem;
@@ -49,4 +124,8 @@ main ol {
 
 .prioritario {
     background-color: rgba(0, 128, 0, 0.3);
+}
+
+.normal {
+    background-color: rgb(255, 255, 0, 0.3);
 }

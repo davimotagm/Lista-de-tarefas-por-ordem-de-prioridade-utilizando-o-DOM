@@ -20,13 +20,13 @@ let tasks = [
     tipo: "prioritário"
   }
 ]
+const olMain = document.querySelector("ol");
 
 function adicionandoTarefas(lista) {
-  const olMain = document.querySelector("ol");
 
   lista.sort((a, b) => {
     // Definindo a ordem de prioridade
-    const prioridades = ["URGENTE", "PRIORITÁRIO"];
+    const prioridades = ["URGENTE", "PRIORITÁRIO", "NORMAL"];
 
     // Obtendo o índice da prioridade de cada tarefa
     const indicePrioridadeA = prioridades.indexOf(a.tipo.toUpperCase(0));
@@ -54,5 +54,34 @@ function adicionandoTarefas(lista) {
     olMain.appendChild(div_li);
   }
 }
+
+// Formulário para acrecentar novos elementos na lista de tarefas
+const buttonForm = document.getElementById('buttonForm')
+
+buttonForm.addEventListener('click', function selecao(evt) {
+  //Interrempendo o comportamento padrão do browser para evitar bugs.
+  evt.preventDefault()
+
+  // Definindo o valor do input em uma variável
+  const tag_Input = document.getElementById('input_Value');
+  const text_Input = tag_Input.value
+
+  // Definindo o valor da select em uma variável
+  const tag_Select = document.getElementById('option_Value');
+  const valorIndicado = tag_Select.options[tag_Select.selectedIndex].value;
+
+  // Atualizando o array da lista de tarefas de acordo com os valores definidos no formulário.
+  tasks.push({ titulo: text_Input, tipo: valorIndicado });
+
+  // Limpando o local onde está renderizando a lista
+  olMain.innerText = ""
+
+  // Adicionando as novas atividades definidas no formulário no HTML.
+  adicionandoTarefas(tasks);
+})
 adicionandoTarefas(tasks);
+
+
+
+
 
